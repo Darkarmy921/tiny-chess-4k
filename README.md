@@ -23,9 +23,8 @@ A 4KB Python chess engine for the [make.fun](https://make.fun) `tiny-chess-01` c
 
 ## Local development
 
-The readable source lives in `dev/` (not part of this repo): `engine.py` is the
-engine, `pack.py` builds `main.py`, `minify.py` is the token minifier, and
-`run_trial.sh` runs the practice gauntlet locally.
+Readable source lives in `dev/` (not in this repo): `engine.py`,
+`pack.py`, `minify.py`, `run_trial.sh`.
 
 ## Results
 
@@ -48,12 +47,8 @@ is drawn as White in the final.
 
 ### Entry 1 — v3 engine (commit 00ed8362)
 
-Practice trial-0 (8 games vs the house gauntlet), engine v3 at 90,000 nodes/move:
-**2 wins, 1 draw, 5 losses — Elo 1173, spare 261 plies.** Beats the depth-2 and
-depth-3 anchors, draws depth-4, loses to the nodes-100k and stronger anchors.
-
-A 200,000-node budget was tested on the same trial and scored worse
-(1 win, 0 draws, 7 losses — Elo 871), so the entry keeps the 90,000-node budget.
+Trial-0, 90,000 nodes/move: **2 wins, 1 draw, 5 losses — Elo 1173, spare 261.**
+A 200,000-node budget scored worse (Elo 871), so the entry keeps 90,000.
 
 See the submission history on [make.fun](https://make.fun/competitions/tiny-chess-01).
 
